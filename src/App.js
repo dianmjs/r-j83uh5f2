@@ -19,9 +19,9 @@ class App extends Component {
       </div>
     );
   }
-  counter(evet) {
+  counter(event) {
     this.setState({
-      numChar: this.state.numChar + 1,
+      numChar: event.target.value.length,
     });
   }
 }
